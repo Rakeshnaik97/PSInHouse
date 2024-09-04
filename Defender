@@ -1,0 +1,1 @@
+ Get-WinEvent -LogName "Microsoft-Windows-Windows Defender/Operational" | Where-Object { $_.Id -eq 1121} | Format-Table -Wrap
